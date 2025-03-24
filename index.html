@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+  </head>
+  <body>
+    <div class="h-screen w-full overflow-hidden">
+      <div class="w-full h-screen absolute top-0 left-0 z-[2] text-white">
+        <nav
+          class="w-full flex flex-col sm:flex-row justify-between items-center p-4 sm:py-10 sm:px-10 font-[helvetica_now_display]"
+        >
+          <h3 class="text-xl mb-4 sm:mb-0">PLANETS</h3>
+          <div class="flex gap-4 sm:gap-6">
+            <a class="text-sm hover:text-gray-300 text-white" href="#">Home</a>
+            <a class="text-sm hover:text-gray-300 text-white" href="#">About</a>
+            <a class="text-sm hover:text-gray-300 text-white" href="#"
+              >Contact</a
+            >
+          </div>
+        </nav>
+        <div
+          class="absolute top-[15%] sm:top-[10%] left-1/2 -translate-x-1/2 text-center w-[90%] sm:w-auto font-['Bellina']"
+        >
+          <div class="w-full h-[5em] overflow-hidden">
+            <h1
+              class="heading h-full text-3xl translate-y-3 sm:text-5xl font-light tracking-tighter mb-2 text-center"
+            >
+              Earth
+            </h1>
+            <h1
+              class="heading h-full text-3xl translate-y-3 sm:text-5xl font-light tracking-tighter mb-2"
+            >
+              Cizilla
+            </h1>
+            <h1
+              class="heading h-full text-3xl translate-y-3 sm:text-5xl font-light tracking-tighter mb-2"
+            >
+              Volcanic
+            </h1>
+            <h1
+              class="heading h-full text-3xl translate-y-3 sm:text-5xl font-light tracking-tighter mb-2"
+            >
+              Venus
+            </h1>
+          </div>
+          <p
+            class="text-sm sm:text-md font-['Gilroy'] px-4 sm:px-0"
+            style="font-family: 'Gilroy', sans-serif"
+          >
+            Our vibrant blue oasis, teeming with life, floating in the vastness
+            of space
+          </p>
+        </div>
+        <div
+          class="absolute top-[26%] left-1/2 -translate-x-1/2 -translate-y-1/2 w-[80%] h-[1px] bg-gradient-to-r from-white/0 via-white to-white/0 pointer-events-none"
+        ></div>
+      </div>
+      <canvas id="canvas"></canvas>
+    </div>
+    <script type="module" src="/src/main.js"></script>
+  </body>
+</html>
